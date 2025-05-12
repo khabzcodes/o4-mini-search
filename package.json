@@ -2,9 +2,10 @@
   "name": "o4-mini-search",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node src/index.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +13,14 @@
   "packageManager": "pnpm@10.8.0",
   "devDependencies": {
     "@types/node": "^22.15.17",
+    "dotenv": "^16.5.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^1.3.22",
+    "@tavily/core": "^0.5.2",
+    "ai": "^4.3.15",
+    "zod": "^3.24.4"
   }
 }
